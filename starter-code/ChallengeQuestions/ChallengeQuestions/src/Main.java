@@ -121,6 +121,11 @@ public class Main {
      * @return Array of sorted integers, merged from array1 and array2
      */
     public static int[] mergeSortedArrays(int[] array1, int[] array2){
-        return null;
+        Arrays.sort(array1);
+        for (int i =0 ; i <array2.length; i++) {
+            array1[i]=array2[i];
+        }
+        Arrays.sort(array1);
+        return array1;
     }
 }
